@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity_add_description">
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/but_back"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:fontFamily="@font/advent_pro_thin"
+                android:onClick="onClick"
+                android:text="Назад"
+                android:textAllCaps="false"
+                android:textColor="#665940"
+                android:textSize="18sp" />
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="match_parent"
+                android:layout_height="325dp"
+                android:background="@android:color/transparent"
+                app:srcCompat="@android:color/transparent" />
+
+            <EditText
+                android:id="@+id/edit_descript"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:cursorVisible="true"
+                android:ems="10"
+                android:fontFamily="@font/advent_pro_thin"
+                android:gravity="top"
+                android:hint="Добавьте описание к снимку"
+                android:inputType="textMultiLine"
+                android:saveEnabled="true"
+                android:scrollIndicators="top|bottom"
+                android:text=""
+                android:textAlignment="viewStart"
+                android:textColor="#665940"
+                android:textColorHighlight="@android:color/background_dark"
+                android:textColorHint="#665940"
+                android:textColorLink="@android:color/background_dark"
+                android:textCursorDrawable="@android:color/background_dark"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/but_finish"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:fontFamily="@font/advent_pro_thin"
+                android:onClick="onClick"
+                android:text="Готово"
+                android:textAllCaps="false"
+                android:textColor="#665940"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
